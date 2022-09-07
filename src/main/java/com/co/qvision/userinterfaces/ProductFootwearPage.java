@@ -3,8 +3,14 @@ package com.co.qvision.userinterfaces;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class ProductFootwearPage {
+
+    public static  final Target SLC_IMG = Target.the("Selection image")
+            .locatedBy("(//*[@class='attachment-woocommerce_thumbnail size-woocommerce_thumbnail'])[1]");
+
     public static  final Target SLC_SIZE = Target.the("Selection size")
-            .locatedBy("//div[@data-variationid='201710'] ");
+            .locatedBy("//*[@class='variations_form cart']");
+    public static  final Target SLC_SIZE_34 = Target.the("Selection size")
+            .locatedBy("(//*[@class='size_select'])[1]");
     public static final Target BTN_BUY = Target.the("click button buy")
-            .locatedBy("(//a[@data-product_id='201710'])[1] ");
+            .locatedBy("(//div[@class='buy_button'])[1]");
 }

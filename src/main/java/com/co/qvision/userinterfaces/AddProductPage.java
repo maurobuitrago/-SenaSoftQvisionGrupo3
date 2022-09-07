@@ -4,7 +4,8 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class AddProductPage {
 
-     public static final Target BTN_LOGIN = Target.the("click login")
-            .locatedBy("//*[@class='myaccount']");
+     public static final Target BTN_FINISH_SHOPPING = Target.the(" button finish shopping")
+            .locatedBy("//*[text()='Finalizar compra']");
+
 
 }
