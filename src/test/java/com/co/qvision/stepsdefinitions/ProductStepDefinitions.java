@@ -21,7 +21,7 @@ public class ProductStepDefinitions {
     @Then("^He user could see the product in the product list$")
     public void heUserCouldSeeTheProductInTheProductList() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(CompareAddProduct.compareAddProduct()
-                , Matchers.equalTo("FINALIZAR COMPRA")));
+                , Matchers.equalTo(true)));
 
     }
 }
